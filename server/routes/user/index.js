@@ -1,5 +1,5 @@
-module.exports = async function (fastify, opts) {
-    fastify.get('/', async function (request, reply) {
+module.exports = async function (route, opts) {
+    route.get('/', async function (request, reply) {
         return { user: true }
     })
 }
